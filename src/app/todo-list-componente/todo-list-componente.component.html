@@ -1,0 +1,35 @@
+<main>
+    <div class="container">
+        
+        <h1>Lista de Tarefas</h1>
+        
+        <form>
+            <input type="text" [(ngModel)]="newTask" name="tasksName" placeholder="Digite uma tarefa...">
+            <button class="add-task" (click)="
+addTask()">Adicionar</button>
+    </form>
+    
+    <div class="tasks">
+        <ul>
+            
+            @for (currentTask of listTasks; track currentTask.id; let i = $index) {
+                <div class="p">
+                    <input type="checkbox" (change)="taskCompleted(i)">
+                    <p class="showTask" [style.text-decoration]="currentTask.completed ? 'line-through' : 'none'"> 
+                        {{ currentTask.name }}
+                    </p>
+                    <div class="btn">
+                        <button (click)="removeTask(i)" class="btnRemoveTask">Remover tarefa</button>
+                    </div>
+                </div>
+            }
+        </ul>
+    </div>
+    @if(listTasks.length === 0){
+                <p>A lista está vazia...</p>
+            }@else {
+            <p>Total de tarefas: {{listTasks.length}}</p>
+            }
+</div>
+
+</main>
