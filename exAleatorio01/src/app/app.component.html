@@ -1,0 +1,8 @@
+<!-- EXIBINDO OS VALORES QUE O COMPONENTE FILHO RECEBEU: -->
+<h1>_______________________________________</h1>
+<app-header 
+  [nome] ="produtoNome">
+  [preco]="produtoPreco"
+</app-header>
+<app-btn (buttonClick)="buttonClicked($event)"></app-btn>
+<h1>_______________________________________</h1>

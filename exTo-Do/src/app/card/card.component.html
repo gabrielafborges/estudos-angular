@@ -1,0 +1,15 @@
+<div class="card-container">
+    <div class="card">
+         <form>
+            <input type="name" name="nomeUsuario" [(ngModel)]="name" placeholder="Digite seu nome...">
+            <input type="submit" value="Enviar">
+            @if (name !== '') {
+                <p>Olá, {{name}}</p>
+            }
+         </form>
+        <h1>PLANO: {{textoUm}}</h1>
+        <h3>PREÇO: R${{textoDois}}</h3>
+        <app-card-btn (btnClick)="funcaoClique($event)"></app-card-btn>
+        <p>{{msg}}</p>
+    </div>
+</div>

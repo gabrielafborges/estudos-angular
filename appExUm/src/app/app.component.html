@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<h3>Valor inicial: {{numero}}</h3>
+<h1>{{t}}</h1>
+<button (click)="adicionar()">adicionar</button>
+<button (click)="diminuir()">diminuir</button>
+<button (click)="resetar()">resetar</button>
+
+<h3>Valor atual: {{numero}}</h3>
+
+<div *ngIf="numero > 0">
+    Positivo
+</div>
+<div *ngIf="numero < 0">
+    Negativo
+</div>
+<div *ngIf="numero === 0">
+    Zero
+</div>
