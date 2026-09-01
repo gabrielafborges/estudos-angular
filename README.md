@@ -4,5 +4,5 @@ A ideia é manter um histórico da minha evolução técnica.
 🛠️ Conceitos Praticados:
 Componentização: Criação e reutilização de componentes.
 Data Binding: Comunicação entre o template (HTML) e a lógica (TS).
-Serviços e HTTP: Integração com APIs e gerenciamento de estado simples com HttpClient.
+Serviços e HTTP: Integração com APIs e gerenciamento de estado simples com HttpClient
 -
